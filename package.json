@@ -3,7 +3,7 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "vite dev",
-		"prepack": "svelte-package --input lib && publint",
+		"prepack": "svelte-package --input lib --tsconfig ./tsconfig.app.json && publint",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --cache --write .",
